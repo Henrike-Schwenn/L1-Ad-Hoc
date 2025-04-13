@@ -32,7 +32,7 @@ Exception in thread "main" java.lang.NullPointerException: Cannot store to byte/
 
 **Vermutung**: Da die Operatoren > und = den gleichen Rang haben, wird der Teilausdruck `value = newValue > value` von links nach rechts ausgewertet. Der Variable `value`wird also zuerst der Wert von `newValue` zugewiesen. Dann wird geprüft, ob der neue Wert von `value` größer ist als der alte Wert von `value`. Falls ja, wird der neue Wert zurückgegben, falls nicht, der alte.
 
-**Test**
+**Test**:
 
 Bei `newValue > value`:
 
